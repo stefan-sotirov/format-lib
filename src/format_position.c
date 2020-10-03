@@ -15,8 +15,8 @@
  *  char *str_n_push_pos_v(char *s, int n) - pushes a string n positions forward vertically
  *  char *str_n_pull_pos_v(char *s, int n) - pushes a string n positions backward vertically
  *  char *str_center_pos_v(char *s, int h) - centers a string within a give height
- *  char *str_upmost_pos(char *s, int w) - pushes a string to the upmost limit of a given height
- *  char *str_downmost_pos(char *s, int w) - pushes a string to the downmost limit of a given height
+ *  char *str_upmost_pos(char *s, int h) - pushes a string to the upmost limit of a given height
+ *  char *str_downmost_pos(char *s, int h) - pushes a string to the downmost limit of a given height
  * 
  *  DESCRIPTION
  *  The str_pos() family of functions takes string and an int and changes the string's position according to the function
@@ -58,8 +58,7 @@ char *str_center_pos_h(char *s, int w)
 {
     int s_len = strlen(s);
     int c = w / 2 - s_len / 2 - s_len;
-    char *str = str_n_push_pos_h(s, c);
-    return str;
+    return (str_n_push_pos_h(s, c));
 }
 
 char *str_leftmost_pos(char *s, int w)
