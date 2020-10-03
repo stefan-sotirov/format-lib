@@ -5,7 +5,7 @@
 #include <ctype.h>
 
 /*
- *  SYNOPSYS
+ *  SYNOPSIS
  *  #include "format.h"
  *  char *str_n_push_pos_h(char *s, int n) - pushes a string n positions forward horizontally
  *  char *str_n_pull_pos_h(char *s, int n) - pushes a string n positions backward horizontally

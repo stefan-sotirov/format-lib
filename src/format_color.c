@@ -4,7 +4,7 @@
 #include <stdio.h>
 
 /* 
- *  SYNOPSYS
+ *  SYNOPSIS
  *  #include "format.h"
  *  char *str_color(char *s, const char *c) - colors the entire string
  *  char *str_n_color(char *s, const char *c, int n) - colors n characters from the beginning of the string 
