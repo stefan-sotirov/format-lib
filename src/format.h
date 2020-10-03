@@ -11,4 +11,17 @@ char *str_index_color(char *, const char *, int);
 char *str_char_color(char *, const char *, char);
 
 
+/* format_position.c */
+char *str_n_push_pos_v(char *, int);
+char *str_n_pull_pos_v(char *, int);
+char *str_center_pos_v(char *, int);
+char *str_leftmost_pos(char *, int);
+char *str_rightmost_pos(char *, int);
+
+char *str_n_push_pos_h(char *, int);
+char *str_n_pull_pos_h(char *, int);
+char *str_center_pos_h(char *, int);
+char *str_upmost_pos(char *, int);
+char *str_downmost_pos(char *, int);
+
 #endif /* FORMAT_H */
