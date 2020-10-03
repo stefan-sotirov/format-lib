@@ -17,6 +17,12 @@
  *  char *str_center_pos_v(char *s, int h) - centers a string within a give height
  *  char *str_upmost_pos(char *s, int w) - pushes a string to the upmost limit of a given height
  *  char *str_downmost_pos(char *s, int w) - pushes a string to the downmost limit of a given height
+ * 
+ *  DESCRIPTION
+ *  The str_pos() family of functions takes string and an int and changes the string's position according to the function
+ *  
+ *  RETURN VALUE
+ *  A new string with the changed positions
  */
 
 char *str_n_push_pos_h(char *s, int n)
