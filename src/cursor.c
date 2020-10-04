@@ -6,7 +6,6 @@
 /*
  *  SYNOPSIS
  *  #include "format.h"
- *  char *itoa_b10(char *s, int n) - portable itoa() for base 10
  *  char *mov_c_fwd(int n) - moves the cursor n positions forward(to the right)
  *  char *mov_c_bwd(int n) - moves the cursor n positions backward(to the left)
  *  char *mov_c_up(int n) - moves the cursor n positions(lines) upward
@@ -17,20 +16,13 @@
  *  This file contains functions used to manipulate the console cursor position - like pointers to the cursor
  *  
  *  RETURN VALUES
- *  itoa_b10() returns the converted integer
- *  All other functions return new strings with the escape code(s)
+ *  A new string with the escape code(s)
 */ 
-
-char *itoa_b10(char *s, int n)
-{
-    sprintf(s, "%d", n);
-    return s;
-}
 
 char *mov_c_fwd(int n)
 {
     char *n_str = (char *)malloc(4);
-    itoa_b10(n_str, n);
+    sprintf(n_str, "%d", n);
     char *str = (char *)malloc(10);
     strcpy(str, "\e[");
     strcat(str, n_str);
@@ -42,7 +34,7 @@ char *mov_c_fwd(int n)
 char *mov_c_bwd(int n)
 {
     char *n_str = (char *)malloc(4);
-    itoa_b10(n_str, n);
+    sprintf(n_str, "%d", n);
     char *str = (char *)malloc(10);
     strcpy(str, "\e[");
     strcat(str, n_str);
@@ -54,7 +46,7 @@ char *mov_c_bwd(int n)
 char *mov_c_up(int n)
 {
     char *n_str = (char *)malloc(4);
-    itoa_b10(n_str, n);
+    sprintf(n_str, "%d", n);
     char *str = (char *)malloc(10);
     strcpy(str, "\e[");
     strcat(str, n_str);
@@ -66,7 +58,7 @@ char *mov_c_up(int n)
 char *mov_c_down(int n)
 {
     char *n_str = (char *)malloc(4);
-    itoa_b10(n_str, n);
+    sprintf(n_str, "%d", n);
     char *str = (char *)malloc(10);
     strcpy(str, "\e[");
     strcat(str, n_str);
