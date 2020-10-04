@@ -1,7 +1,6 @@
 #include "format.h"
 #include <stdlib.h>
 #include <string.h>
-#include <stdio.h>
 
 /* 
  *  SYNOPSIS

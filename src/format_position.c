@@ -1,7 +1,6 @@
 #include "format.h"
 #include <stdlib.h>
 #include <string.h>
-#include <ctype.h>
 
 /*
  *  SYNOPSIS
@@ -56,7 +55,7 @@ char *str_n_pull_pos_h(char *s, int n)
 char *str_center_pos_h(char *s, int w)
 {
     int s_len = strlen(s);
-    int c = w / 2 - s_len / 2 - s_len;
+    int c = w / 2 - s_len / 2;
     return (str_n_push_pos_h(s, c));
 }
 
