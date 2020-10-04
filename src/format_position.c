@@ -1,5 +1,4 @@
 #include "format.h"
-#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <ctype.h>
@@ -19,7 +18,7 @@
  *  char *str_downmost_pos(char *s, int h) - pushes a string to the downmost limit of a given height
  * 
  *  DESCRIPTION
- *  The str_pos() family of functions takes string and an int and changes the string's position according to the function
+ *  The str_pos() family of functions takes strings and integers and changes the strings positions according to the integers
  *  
  *  RETURN VALUE
  *  A new string with the changed positions
