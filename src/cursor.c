@@ -82,8 +82,3 @@ char *pos_c(int l, int c)
     strcat(str, c > 0 ? mov_c_fwd(c) : mov_c_bwd(c));
     return str;
 }
-
-char *clear_screen()
-{
-    char *str = (char *)malloc(6);
-}

@@ -31,5 +31,6 @@ char *mov_c_fwd(int n);
 char *mov_c_bwd(int n);
 char *mov_c_up(int n);
 char *mov_c_down(int n);
+#define c_scr() "\e[2J" /* clears screen and sets cursor to [0,0] */
 
 #endif /* FORMAT_H */
