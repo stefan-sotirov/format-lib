@@ -25,7 +25,7 @@ char *str_upmost_pos(char *, int);
 char *str_downmost_pos(char *, int);
 
 
-/* cursor movement */
+/* cursor.c */
 char *pos_c(int l, int c);
 char *mov_c_fwd(int n);
 char *mov_c_bwd(int n);

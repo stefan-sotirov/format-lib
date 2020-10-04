@@ -17,7 +17,8 @@
  *  This file contains functions used to manipulate the console cursor position - like pointers to the cursor
  *  
  *  RETURN VALUES
- *  A new string with the changed cursor position or the converted integer
+ *  itoa_b10() returns a converted int(to a string)
+ *  All other functions return new string with the changed cursor position
 */ 
 
 char *itoa_b10(char *s, int n)
@@ -30,7 +31,7 @@ char *mov_c_fwd(int n)
 {
     char *n_str = (char *)malloc(3);
     itoa_b10(n_str, n);
-    char *str = (char *)malloc(7 + 3);
+    char *str = (char *)malloc(10);
     strcpy(str, "\e[");
     strcat(str, n_str);
     strcat(str, "C");
@@ -42,7 +43,7 @@ char *mov_c_bwd(int n)
 {
     char *n_str = (char *)malloc(3);
     itoa_b10(n_str, n);
-    char *str = (char *)malloc(7 + 3);
+    char *str = (char *)malloc(10);
     strcpy(str, "\e[");
     strcat(str, n_str);
     strcat(str, "D");
@@ -54,7 +55,7 @@ char *mov_c_up(int n)
 {
     char *n_str = (char *)malloc(3);
     itoa_b10(n_str, n);
-    char *str = (char *)malloc(7 + 3);
+    char *str = (char *)malloc(10);
     strcpy(str, "\e[");
     strcat(str, n_str);
     strcat(str, "A");
@@ -66,7 +67,7 @@ char *mov_c_down(int n)
 {
     char *n_str = (char *)malloc(3);
     itoa_b10(n_str, n);
-    char *str = (char *)malloc(7 + 3);
+    char *str = (char *)malloc(10);
     strcpy(str, "\e[");
     strcat(str, n_str);
     strcat(str, "B");

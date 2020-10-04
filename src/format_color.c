@@ -13,7 +13,7 @@
  *  char *str_char_color(char *s, const char *c, char ch) - colors every found character within a string
  * 
  *  DESCRIPTION
- *  The str_color() family of functions takes strings and colors them according to the passed ANSI escape code
+ *  The str_color() family of functions takes strings and colors them according to the passed ANSI escape codes
  *  The codes are listed in ANSI_color_codes.h
  * 
  *  RETURN VALUES
