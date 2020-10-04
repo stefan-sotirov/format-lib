@@ -17,8 +17,8 @@
  *  This file contains functions used to manipulate the console cursor position - like pointers to the cursor
  *  
  *  RETURN VALUES
- *  itoa_b10() returns a converted int(to a string)
- *  All other functions return new string with the changed cursor position
+ *  itoa_b10() returns the converted integer
+ *  All other functions return new strings with the escape code(s)
 */ 
 
 char *itoa_b10(char *s, int n)

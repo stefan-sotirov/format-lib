@@ -17,7 +17,7 @@
  *  The codes are listed in ANSI_color_codes.h
  * 
  *  RETURN VALUES
- *  A new string with the escape codes
+ *  A new string with the escape code(s)
  */
 
 char *str_color(char *s, const char *c)

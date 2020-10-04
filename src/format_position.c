@@ -21,7 +21,7 @@
  *  The str_pos() family of functions takes strings and integers and changes the strings positions according to the integers
  *  
  *  RETURN VALUE
- *  A new string with the changed position
+ *  A new string with the escape code(s)
  */
 
 char *str_n_push_pos_h(char *s, int n)
