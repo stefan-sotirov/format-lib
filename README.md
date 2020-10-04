@@ -1,2 +1,2 @@
-# A-non-rendering-engine
-Formatting C strings in the console
+# format-lib
+A low level library for formatting C strings in the console
