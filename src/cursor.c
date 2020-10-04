@@ -29,7 +29,7 @@ char *itoa_b10(char *s, int n)
 
 char *mov_c_fwd(int n)
 {
-    char *n_str = (char *)malloc(3);
+    char *n_str = (char *)malloc(4);
     itoa_b10(n_str, n);
     char *str = (char *)malloc(10);
     strcpy(str, "\e[");
@@ -41,7 +41,7 @@ char *mov_c_fwd(int n)
 
 char *mov_c_bwd(int n)
 {
-    char *n_str = (char *)malloc(3);
+    char *n_str = (char *)malloc(4);
     itoa_b10(n_str, n);
     char *str = (char *)malloc(10);
     strcpy(str, "\e[");
@@ -53,7 +53,7 @@ char *mov_c_bwd(int n)
 
 char *mov_c_up(int n)
 {
-    char *n_str = (char *)malloc(3);
+    char *n_str = (char *)malloc(4);
     itoa_b10(n_str, n);
     char *str = (char *)malloc(10);
     strcpy(str, "\e[");
@@ -65,7 +65,7 @@ char *mov_c_up(int n)
 
 char *mov_c_down(int n)
 {
-    char *n_str = (char *)malloc(3);
+    char *n_str = (char *)malloc(4);
     itoa_b10(n_str, n);
     char *str = (char *)malloc(10);
     strcpy(str, "\e[");
@@ -81,4 +81,9 @@ char *pos_c(int l, int c)
     strcpy(str, l > 0 ? mov_c_down(l) : mov_c_up(l));
     strcat(str, c > 0 ? mov_c_fwd(c) : mov_c_bwd(c));
     return str;
+}
+
+char *clear_screen()
+{
+    char *str = (char *)malloc(6);
 }
